@@ -3,7 +3,7 @@ import { AppError } from "@/utils/AppError";
 import { knex } from "@/database/knex";
 import { z } from "zod"
 
-class TableSessionsController {
+class TablesSessionsController {
   async create(request: Request, response: Response, next: NextFunction) {
     try {
       const bodySchema = z.object({
@@ -60,4 +60,4 @@ class TableSessionsController {
   }
 }
 
-export { TableSessionsController }
+export { TablesSessionsController }

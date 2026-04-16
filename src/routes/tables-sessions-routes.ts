@@ -1,12 +1,12 @@
 import { Router } from "express";
 
-import { TableSessionsController } from "@/controllers/tables-sessions-controller"
+import { TablesSessionsController } from "@/controllers/tables-sessions-controller"
 
-const tableSessionsRoutes = Router()
-const tableSessionsController = new TableSessionsController()
+const tablesSessionsRoutes = Router()
+const tablesSessionsController = new TablesSessionsController()
 
-tableSessionsRoutes.get("/", tableSessionsController.index)
-tableSessionsRoutes.post("/", tableSessionsController.create)
-tableSessionsRoutes.patch("/:id", tableSessionsController.update)
+tablesSessionsRoutes.get("/", tablesSessionsController.index)
+tablesSessionsRoutes.post("/", tablesSessionsController.create)
+tablesSessionsRoutes.patch("/:id", tablesSessionsController.update)
 
-export { tableSessionsRoutes }
+export { tablesSessionsRoutes }
